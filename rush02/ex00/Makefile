@@ -1,19 +1,28 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    README.md                                          :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: eros-gir <eros-gir@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/13 10:28:11 by eros-gir          #+#    #+#              #
-#    Updated: 2022/01/13 10:31:36 by eros-gir         ###   ########.fr        #
+#    Created: 2021/12/19 18:13:31 by eros-gir          #+#    #+#              #
+#    Updated: 2021/12/19 18:19:11 by eros-gir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-This git is a compilation of the piscine exercises I did for 42Barcelona.
+NAME = rush-02
 
-I managed to do up to c06 skipping c05
-The rush00 is a 100% without bonus. rush01 and 02 are not complete.
-The BSQ is the work of all the 42Barcelona piscine from december 2021 and
-has a 0% on the score but works almost all, just some issues on the error 
-handling.
+SRC = main.c input.c interpretar.c insert_dict.c dict_struct.c read_dict.c
+
+all: $(NAME)
+
+$(NAME):
+	gcc -Wall -Wextra -Werror -o $(NAME) $(SRC)
+
+clean:
+	/bin/rm -f *.o
+
+fclean:
+	/bin/rm -f $(NAME)
+
+re: fclean all

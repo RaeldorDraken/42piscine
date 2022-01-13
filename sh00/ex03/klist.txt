@@ -1,0 +1,5 @@
+Credentials cache: API:C0D73B71-0497-4469-9E00-85D0C106B7A9
+        Principal: eros-gir@42BARCELONA.COM
+
+  Issued                Expires               Principal
+Dec  9 17:21:48 2021  Dec 10 03:21:43 2021  krbtgt/42BARCELONA.COM@42BARCELONA.COM
